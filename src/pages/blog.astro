@@ -14,39 +14,6 @@ let publishedBlogEntries = await getCollection("blog", ({ data }) => {
 publishedBlogEntries.sort((a, b) => {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
-
-// Append dummy blog entries
-const dummyBlogs = [
-  {
-    slug: "dummy-blog-1",
-    data: {
-      title: "The Art of Digital War",
-      author: "Kryolite Labs",
-      publishDate: new Date("2025-01-01"),
-      image: {
-        src: "/dummy1.jpg", // Ensure this image exists in your public folder
-        alt: "Cyber battlefield"
-      },
-      category: "Cyberwarfare",
-    }
-  },
-  {
-    slug: "dummy-blog-2",
-    data: {
-      title: "Hacking Human Behavior",
-      author: "Kryolite ThinkTank",
-      publishDate: new Date("2025-02-01"),
-      image: {
-        src: "/dummy2.jpg", // Ensure this image exists in your public folder
-        alt: "Social engineering illustration"
-      },
-      category: "Social Engineering",
-    }
-  }
-];
-
-// Merge dummy blogs with real entries
-publishedBlogEntries = [...publishedBlogEntries, ...dummyBlogs];
 ---
 
 <Layout title="Blog">
