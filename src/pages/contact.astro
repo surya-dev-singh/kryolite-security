@@ -1,0 +1,50 @@
+---
+import Contactform from "@/components/contactform.astro";
+import Container from "@/components/container.astro";
+import Layout from "@/layouts/Layout.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Contact Us">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Contact Us</Fragment>
+      <Fragment slot="desc">We're here to help. Reach out anytime.</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16 text-white">
+      <div>
+        <h2 class="font-semibold text-2xl text-white">Get in Touch</h2>
+        <p class="text-base leading-relaxed text-gray-400 mt-4">
+          Whether you're curious about services, reports, or a pentest — we're ready to answer any and all questions.
+        </p>
+
+        <div class="mt-6 space-y-4 text-sm">
+          <div class="flex items-center space-x-3 text-gray-400">
+            <Icon name="uil:map-marker" class="w-5 h-5 text-red-600" />
+            <span>Cyberhub, bangalore, India</span>
+          </div>
+
+          <div class="flex items-center space-x-3 text-gray-400">
+            <Icon name="uil:envelope" class="w-5 h-5 text-red-600" />
+            <a href="mailto:contact@kryolitesecurity.com" class="hover:underline">
+              contact@kryolitesecurity.com
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-3 text-gray-400">
+            <Icon name="uil:phone" class="w-5 h-5 text-red-600" />
+            <a href="tel:+91-9876543210" class="hover:underline">
+              +91-9876543210
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <Contactform />
+      </div>
+    </div>
+  </Container>
+</Layout>

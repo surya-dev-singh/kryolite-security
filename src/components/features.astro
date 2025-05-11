@@ -1,0 +1,75 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const services = [
+  {
+    title: "Advanced Penetration Testing",
+    description: "Simulate sophisticated attack chains to assess the resilience of your systems.",
+    icon: "mdi:shield-search",
+    bullets: [
+      "Simulated real-world attacks",
+      "Zero-day vulnerability assessments",
+      "Detailed post-engagement reporting"
+    ]
+  },
+  {
+    title: "Network Infrastructure Testing",
+    description: "Analyze internal and external networks to uncover weaknesses and misconfigurations.",
+    icon: "mdi:server-network",
+    bullets: [
+      "Firewall & router assessments",
+      "Internal segmentation analysis",
+      "Protocol misconfigurations"
+    ]
+  },
+  {
+    title: "Red Team Operations",
+    description: "Test detection and response capabilities through stealth-based adversarial simulations.",
+    icon: "mdi:ninja",
+    bullets: [
+      "Assume breach scenarios",
+      "Detection evasion techniques",
+      "Executive red team reporting"
+    ]
+  },
+  {
+    title: "Cloud Security Assessment",
+    description: "Identify configuration flaws and privilege escalations in cloud environments.",
+    icon: "mdi:cloud-lock",
+    bullets: [
+      "IAM misconfigurations",
+      "Storage bucket exposure",
+      "Policy & role abuse"
+    ]
+  }
+];
+---
+
+<section class="bg-white py-20" id="services">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl lg:text-5xl font-bold text-black">Our Security Services</h2>
+    <p class="text-lg mt-4 text-gray-400 max-w-xl mx-auto">
+      Comprehensive cybersecurity services tailored to defend your infrastructure from evolving threats.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6 lg:px-0 max-w-7xl mx-auto">
+    {
+      services.map((item) => (
+        <div class="bg-white border border-red-600 p-6 rounded-xl shadow-lg text-black flex flex-col justify-between">
+          <div>
+            <div class="bg-black border border-red-600 inline-block p-2 rounded-full mb-4">
+              <Icon class="text-red-500 w-6 h-6" name={item.icon} />
+            </div>
+            <h3 class="text-xl font-semibold mb-2">{item.title}</h3>
+            <p class="text-sm text-gray-600 mb-4">{item.description}</p>
+            <ul class="text-sm text-gray-500 list-disc ml-5 space-y-1">
+              {item.bullets.map((point) => <li>{point}</li>)}
+            </ul>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,68 @@
+---
+import { SEO } from "astro-seo";
+import Footer from "@/components/footer.astro";
+import Navbar from "@/components/navbar/navbar.astro";
+import "@fontsource-variable/inter/index.css";
+import "@fontsource-variable/bricolage-grotesque";
+import "../styles/global.css";
+
+export interface Props {
+  title: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+
+const resolvedImageWithDomain = new URL(
+  "/opengraph.jpg",
+  Astro.site
+).toString();
+
+const { title } = Astro.props;
+
+const makeTitle = title
+  ? title + " | " + "Kryolite Security"
+  : "Kryolite Security - Penetration Testing & Red Teaming Consultancy";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <SEO
+      title={makeTitle}
+      description="Kryolite Security offers expert penetration testing, infrastructure audits, and red teaming solutions."
+      canonical={canonicalURL}
+      twitter={{
+        creator: "@kryolitesec",
+        site: "@kryolitesec",
+        card: "summary_large_image",
+      }}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: `Kryolite Security - Penetration Testing & Red Teaming Consultancy`,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: "Kryolite Security Homepage Screenshot",
+        },
+      }}
+    />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+    <style is:global>
+      /* Improve Page speed */
+      img {
+        content-visibility: auto;
+      }
+    </style>
+  </body>
+</html>

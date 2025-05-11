@@ -1,0 +1,43 @@
+---
+import Container from "@/components/container.astro";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+
+const menuitems = [
+  { title: "Services", path: "/#services" },
+  { title: "Blog", path: "/blog" },
+  { title: "Contact", path: "/contact" },
+  { title: "About", path: "/about" },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#000000] shadow-md">
+  <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between px-4 py-3">
+    <Astronav>
+      <div class="flex w-full lg:w-auto items-center justify-between">
+        <!-- Logo instead of text -->
+        <a href="/" class="text-2xl font-extrabold tracking-tight">
+          <img src="/logo.png" alt="Kryolite Security" class="h-7" />
+        </a>
+        <div class="block lg:hidden">
+          <MenuIcon class="w-6 h-6 text-white" />
+        </div>
+      </div>
+
+      <MenuItems class="hidden w-full lg:w-auto mt-4 lg:flex lg:mt-0">
+        <ul class="flex flex-col lg:flex-row lg:gap-6 text-white font-medium text-base">
+          {
+            menuitems.map((item) => (
+              <li>
+                <a
+                  href={item.path}
+                  class="lg:px-2 py-2 hover:text-[#FF2E2E] transition">
+                  {item.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </MenuItems>
+    </Astronav>
+  </div>
+</header>

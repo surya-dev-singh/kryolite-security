@@ -1,0 +1,39 @@
+---
+import heroImage from "@/assets/hero.png"; // ensure hero.png exists here
+---
+
+<section class="w-full bg-black text-white py-20">
+  <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 px-6">
+    
+    <!-- Left Content -->
+    <div class="flex-1 space-y-6 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+        Elite Offensive Security <br />
+        for your business.
+      </h1>
+      <p class="text-lg text-gray-300 max-w-xl">
+        Kryolite Security is your trusted partner in advanced penetration testing, red teaming, and proactive threat emulation. We simulate the real adversary so you stay ahead of them.
+      </p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="#contact" class="px-6 py-3 rounded-xl text-white bg-[#FF2E2E] hover:bg-red-700 transition">
+          Book a Consultation
+        </a>
+        <a href="#services" class="px-6 py-3 rounded-xl border border-white text-white hover:bg-white hover:text-black transition">
+          Explore Services
+        </a>
+      </div>      
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex-1 relative w-full h-72 md:h-[420px]">
+      <img
+        src={heroImage.src}
+        alt="Cybersecurity Illustration"
+        class="w-full h-full object-cover rounded-xl brightness-[0.4] shadow-lg"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+
+  </div>
+</section>

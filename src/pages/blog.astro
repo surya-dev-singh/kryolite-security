@@ -1,0 +1,100 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+
+// Fetch real blog entries
+let publishedBlogEntries = await getCollection("blog", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+
+// Sort by publish date (newest first)
+publishedBlogEntries.sort((a, b) => {
+  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+});
+
+// Append dummy blog entries
+const dummyBlogs = [
+  {
+    slug: "dummy-blog-1",
+    data: {
+      title: "The Art of Digital War",
+      author: "Kryolite Labs",
+      publishDate: new Date("2025-01-01"),
+      image: {
+        src: "/dummy1.jpg", // Ensure this image exists in your public folder
+        alt: "Cyber battlefield"
+      },
+      category: "Cyberwarfare",
+    }
+  },
+  {
+    slug: "dummy-blog-2",
+    data: {
+      title: "Hacking Human Behavior",
+      author: "Kryolite ThinkTank",
+      publishDate: new Date("2025-02-01"),
+      image: {
+        src: "/dummy2.jpg", // Ensure this image exists in your public folder
+        alt: "Social engineering illustration"
+      },
+      category: "Social Engineering",
+    }
+  }
+];
+
+// Merge dummy blogs with real entries
+publishedBlogEntries = [...publishedBlogEntries, ...dummyBlogs];
+---
+
+<Layout title="Blog">
+  <Container full>
+    <Sectionhead>
+      <Fragment slot="title">Our Blog</Fragment>
+      <Fragment slot="desc">
+        We write about building startups and thoughts going on our mind.
+      </Fragment>
+    </Sectionhead>
+
+    <main class="mt-16 pb-24">
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        {
+          publishedBlogEntries.map((blogPostEntry, index) => (
+            <li class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+              <a href={`/blog/${blogPostEntry.slug}`} class="block h-full">
+                <Picture
+                  src={blogPostEntry.data.image.src}
+                  alt={blogPostEntry.data.image.alt}
+                  sizes="(max-width: 800px) 100vw, 800px"
+                  width={800}
+                  height={600}
+                  loading={index <= 2 ? "eager" : "lazy"}
+                  decoding={index <= 2 ? "sync" : "async"}
+                  class="w-full h-48 object-cover object-center"
+                />
+                <div class="p-5 flex flex-col justify-between h-[calc(100%-12rem)]">
+                  <div>
+                    <span class="text-blue-500 uppercase tracking-wide text-xs font-semibold">
+                      {blogPostEntry.data.category}
+                    </span>
+                    <h2 class="text-xl font-semibold leading-tight mt-2">
+                      {blogPostEntry.data.title}
+                    </h2>
+                  </div>
+                  <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+                    <span>{blogPostEntry.data.author}</span>
+                    <time datetime={blogPostEntry.data.publishDate.toISOString()}>
+                      {blogPostEntry.data.publishDate.toDateString()}
+                    </time>
+                  </div>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+  </Container>
+</Layout>
