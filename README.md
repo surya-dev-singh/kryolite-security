@@ -1,2 +1,2 @@
 # kryolite-security
-kryolitesecurity - pentesting and cybersecurity consultant business
+kryolite-security - pentesting and cybersecurity consultant business
