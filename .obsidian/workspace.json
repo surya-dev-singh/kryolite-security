@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "46a07ca7700420b5",
+        "id": "144906b50593a4d0",
         "type": "tabs",
         "children": [
           {
-            "id": "1fe4f9fbf7861e99",
+            "id": "d5438c653b6e0bfc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/blog/complete-guide-fullstack-development.md",
+                "file": "src/content/blog/essential-data-structures-algorithms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "complete-guide-fullstack-development"
+              "title": "essential-data-structures-algorithms"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/blog/complete-guide-fullstack-development.md",
+                "file": "src/content/blog/essential-data-structures-algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for complete-guide-fullstack-development"
+              "title": "Backlinks for essential-data-structures-algorithms"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/blog/complete-guide-fullstack-development.md",
+                "file": "src/content/blog/essential-data-structures-algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from complete-guide-fullstack-development"
+              "title": "Outgoing links from essential-data-structures-algorithms"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/blog/complete-guide-fullstack-development.md",
+                "file": "src/content/blog/essential-data-structures-algorithms.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of complete-guide-fullstack-development"
+              "title": "Outline of essential-data-structures-algorithms"
             }
           }
         ]
@@ -169,6 +169,8 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1fe4f9fbf7861e99",
-  "lastOpenFiles": []
+  "active": "d5438c653b6e0bfc",
+  "lastOpenFiles": [
+    "src/content/blog/complete-guide-fullstack-development.md"
+  ]
 }
