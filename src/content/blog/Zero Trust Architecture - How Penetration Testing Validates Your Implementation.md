@@ -8,7 +8,7 @@ image: {
 }
 publishDate: "2025-11-11 08:00"
 category: "Zero Trust Security"
-author: "KryoliteSecurity"
+author: "Surya Dev Singh"
 tags: [zero-trust, pentesting, cybersecurity, network-security, compliance]
 ---
 
