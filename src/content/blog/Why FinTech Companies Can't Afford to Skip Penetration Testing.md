@@ -8,7 +8,7 @@ image: {
 }
 publishDate: "2025-11-11 08:00"
 category: "FinTech Security"
-author: "KryptoLite Security"
+author: "Surya Dev Singh"
 tags: [fintech, pentesting, cybersecurity, compliance, PCI-DSS]
 ---
 

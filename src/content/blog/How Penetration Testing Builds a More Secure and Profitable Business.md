@@ -8,7 +8,7 @@ image: {
 }
 publishDate: "2025-11-11 09:00"
 category: "Cybersecurity"
-author: "KryptoLite Security"
+author: "Surya Dev Singh"
 tags: [pentesting, GRC, compliance, cybersecurity, risk-management]
 ---
 
