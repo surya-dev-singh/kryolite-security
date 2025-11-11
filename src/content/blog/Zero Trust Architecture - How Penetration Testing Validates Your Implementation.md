@@ -6,7 +6,7 @@ image: {
     src: "https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     alt: "Zero Trust security concept with multiple authentication layers"
 }
-publishDate: "2023-11-22 10:00"
+publishDate: "2025-11-11 08:00"
 category: "Zero Trust Security"
 author: "KryoliteSecurity"
 tags: [zero-trust, pentesting, cybersecurity, network-security, compliance]
