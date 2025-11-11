@@ -66,9 +66,9 @@ Through our extensive work with FinTech clients, we consistently identify critic
 * Insecure data handling with payment processors
 * Weak authentication in financial data aggregators
 
-## The KryptoLite Security Approach to FinTech Testing
+## The kryolite Security Approach to FinTech Testing
 
-At **KryptoLite Security**, we understand that FinTech applications require specialized testing methodologies. Our approach includes:
+At **kryolite Security**, we understand that FinTech applications require specialized testing methodologies. Our approach includes:
 
 ### Business Logic Testing
 We go beyond technical vulnerabilities to test the financial logic of your application, ensuring that transaction flows, account management, and financial calculations cannot be manipulated.
@@ -96,11 +96,11 @@ The most successful FinTech companies don't treat security as a one-time project
 * **Developer security training** to prevent vulnerabilities at the source
 * **Ongoing vulnerability management** to address new threats
 
-## Secure Your FinTech Future with KryptoLite Security
+## Secure Your FinTech Future with kryolite Security
 
 In the competitive FinTech space, your security posture isn't just about protection—it's about positioning. It's what enables you to confidently tell customers, partners, and regulators that their assets are safe with you.
 
-At **KryptoLite Security**, we specialize in helping FinTech companies build and maintain this confidence. Our penetration tests deliver:
+At **kryolite Security**, we specialize in helping FinTech companies build and maintain this confidence. Our penetration tests deliver:
 
 * **Actionable findings** prioritized by business impact, not just technical severity
 * **Comprehensive coverage** of web applications, mobile apps, APIs, and cloud infrastructure
@@ -109,4 +109,4 @@ At **KryptoLite Security**, we specialize in helping FinTech companies build and
 
 Don't let security be the weak link in your innovative financial solution.
 
-[**Schedule your FinTech security assessment with KryptoLite Security today**](https://kryolitesecurity.com) and turn your security posture into your strongest competitive advantage.
+[**Schedule your FinTech security assessment with kryolite Security today**](https://kryolitesecurity.com) and turn your security posture into your strongest competitive advantage.

@@ -59,9 +59,9 @@ While there is an upfront cost, a penetration test is not an expense—it's a st
 *   **Accelerates Compliance and Audits:** A comprehensive pentest report is gold for your Governance, Risk, and Compliance (GRC) efforts. It provides auditors with the proof they need, speeding up certifications that can unlock new business opportunities.
 *   **Provides a Competitive Advantage:** Being able to demonstrate a proven, tested security posture can be a powerful differentiator when bidding for contracts, especially with large enterprises and government entities.
 
-## Ready to Elevate Your Security Posture? Partner with KryptoLite Security
+## Ready to Elevate Your Security Posture? Partner with kryolite Security
 
-Navigating the world of penetration testing requires a partner you can trust. At **KryptoLite Security**, we don't just find vulnerabilities; we deliver **actionable intelligence and context** that empowers your business.
+Navigating the world of penetration testing requires a partner you can trust. At **kryolite Security**, we don't just find vulnerabilities; we deliver **actionable intelligence and context** that empowers your business.
 
 Our authorized penetration tests are designed to provide the **most valuable findings** to streamline your auditing and GRC processes. We help you move beyond checkbox compliance to achieve a robust security standard that protects your assets and impresses your stakeholders.
 
@@ -69,4 +69,4 @@ Our reports are clear, concise, and prioritized, giving your team the precise gu
 
 **Stop guessing about your security. Start knowing.**
 
-[**Contact KryptoLite Security today**](https://kryolitesecurity.com) to schedule a consultation and discover how our penetration testing services can build a more secure—and more profitable—future for your business.
+[**Contact kryolite Security today**](https://kryolitesecurity.com) to schedule a consultation and discover how our penetration testing services can build a more secure—and more profitable—future for your business.
